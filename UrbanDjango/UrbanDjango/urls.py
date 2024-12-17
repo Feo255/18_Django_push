@@ -16,11 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from task3.views import index, Shop, Box
+from task5.views import sign_up_by_html, sign_up_by_django
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', index),
-    path('shop/', Shop.as_view()),
-    path('box/', Box.as_view()),
+    path('', sign_up_by_html),
+    path('func/', sign_up_by_django),
+
 ]
